@@ -64,7 +64,7 @@ function changeFontSize(element) {
 
 function changeElementsFontSize () {
     var elements = document.getElementsByClassName('texto');
-    for (var element of elements) {
-        changeFontSize(element);
+    for (var i = 0; i < elements.length; i ++) {
+        changeFontSize(elements[i]);
     }
 };
