@@ -61,3 +61,10 @@ function changeFontSize(element) {
 	// mudo o tamanho da fonte do elemento
 	element.style.fontSize = fontSize;
 }
+
+function changeElementsFontSize () {
+    var elements = document.getElementsByClassName('texto');
+    for (var element of elements) {
+        changeFontSize(element);
+    }
+};
